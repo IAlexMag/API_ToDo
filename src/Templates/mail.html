@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo Electrónico de Ejemplo</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos para las tablas */
+        table {
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        /* Estilos para elementos en la tabla */
+
+    </style>
+</head>
+<body>
+    <!-- Contenedor principal (tabla) -->
+    <table cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td>
+                <!-- Contenido del correo -->
+                <table width="100%" cellpadding="10" cellspacing="0" border="0" bgcolor="#ffffff">
+                    <tr>
+                        <td align="left">
+                            <img src="https://i.postimg.cc/G2PZF4bR/logo.png" style="width: 10%; height: 30px; margin: center;">
+                            <label style="color: #00199D; font-size: 20px; font-style: normal; font-weight: 600; line-height: normal; letter-spacing: 0px; margin: center;">IoTShower</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <h3 style="color: #00199D; text-align: center;">Recupera tu contraseña</h3>
+                        </td>
+                    </tr>
+                    <!-- Agrega más contenido aquí -->
+                    <tr>
+                        <td>
+                            <div class="saludo">
+                                <h4 style="color: #00199D; text-align: left;">Hola: ¡{{ name }}!</h4>
+                            </div>
+                            <img src="https://i.postimg.cc/VvDph2SH/authentication-monochromatic-93289.png" alt="Descripción de la imagen" style="display: block; margin-left: auto; margin-right: auto; max-width: 70%; height: auto;">
+                            <div class="container">
+                                <p style="color: #090909; text-align: center; margin-bottom: 0;">
+                                    Haz clic en el siguiente enlace para restablecer tu contraseña:
+                                    <br>
+                                    <a href="{{ enlace }}" class="text-success-emphasis" style="color: #090909; text-decoration: none; display: inline-block; padding: 10px; background-color: #4CAF50; color: white; border-radius: 5px; font-weight: bold;">
+                                        Restablecer Contraseña
+                                    </a>
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" cellpadding="10" cellspacing="0" border="0" bgcolor="#eeeeee">
+                    <tr>
+                        <td align="center">
+                            <footer style="margin-top: 20px; text-align: center; color: #888;">
+                                <p style="color: #090909;">Gracias por leer nuestro correo electrónico.</p>
+                            </footer>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
